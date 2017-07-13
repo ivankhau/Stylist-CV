@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reviewCell" rowHeight="108" id="KGk-i7-Jjw" customClass="reviewViewControllerCell" customModule="Barber_CV_temp_caseinsensitive_rename" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lzj-1p-v1Q">
+                        <rect key="frame" x="8" y="6" width="96" height="96"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="h8V-XN-mdm"/>
+                            <constraint firstAttribute="height" constant="96" id="ynu-QB-ZzK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpK-SI-rrk">
+                        <rect key="frame" x="112" y="6" width="181" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CB3-Hu-SxB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14.5"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKc-Rz-Afh" customClass="FloatRatingView" customModule="Barber_CV_temp_caseinsensitive_rename" customModuleProvider="target">
+                        <rect key="frame" x="301" y="9" width="78" height="14"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="6Hh-45-91f"/>
+                            <constraint firstAttribute="width" constant="78" id="x6z-z4-gYf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="TEXT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB4-3R-5Z8">
+                        <rect key="frame" x="112" y="31" width="267" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="71" id="rLN-3b-A9b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="qB4-3R-5Z8" secondAttribute="bottom" constant="-2.5" id="2QM-Th-F8V"/>
+                    <constraint firstItem="aKc-Rz-Afh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Mwb-su-cus"/>
+                    <constraint firstItem="aKc-Rz-Afh" firstAttribute="leading" secondItem="tpK-SI-rrk" secondAttribute="trailing" constant="8" id="STz-cS-l4n"/>
+                    <constraint firstItem="tpK-SI-rrk" firstAttribute="leading" secondItem="Lzj-1p-v1Q" secondAttribute="trailing" constant="8" id="SdT-aI-vZK"/>
+                    <constraint firstItem="tpK-SI-rrk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="UPR-aJ-XEX"/>
+                    <constraint firstItem="Lzj-1p-v1Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="cwa-wW-qgk"/>
+                    <constraint firstItem="aKc-Rz-Afh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="d8a-T3-BBq"/>
+                    <constraint firstItem="qB4-3R-5Z8" firstAttribute="top" secondItem="tpK-SI-rrk" secondAttribute="bottom" constant="5" id="eYu-hk-KEs"/>
+                    <constraint firstItem="Lzj-1p-v1Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fiQ-cS-ZEx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Lzj-1p-v1Q" secondAttribute="bottom" constant="-2.5" id="o6o-iK-Afc"/>
+                    <constraint firstItem="qB4-3R-5Z8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="spV-li-0Xn"/>
+                    <constraint firstItem="qB4-3R-5Z8" firstAttribute="leading" secondItem="Lzj-1p-v1Q" secondAttribute="trailing" constant="8" id="y8Z-i3-IUB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ratingView" destination="aKc-Rz-Afh" id="eRh-wh-jdH"/>
+                <outlet property="reviewImage" destination="Lzj-1p-v1Q" id="IxE-a8-Kp6"/>
+                <outlet property="reviewText" destination="qB4-3R-5Z8" id="qa0-S5-15A"/>
+                <outlet property="reviewUser" destination="tpK-SI-rrk" id="C4Q-h8-EPI"/>
+            </connections>
+            <point key="canvasLocation" x="172.5" y="177"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="StarEmpty" width="138" height="138"/>
+        <image name="StarFull" width="138" height="138"/>
+    </resources>
+</document>
