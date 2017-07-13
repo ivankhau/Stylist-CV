@@ -1,0 +1,29 @@
+{
+  "name": "stylistcv",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "apsl-react-native-button": "^3.0.0",
+    "firebase": "^3.3.0",
+    "geofire": "^4.1.1",
+    "lodash": "^4.16.6",
+    "react": "15.3.1",
+    "react-native": "0.32.0",
+    "react-native-google-places-autocomplete": "^1.2.3",
+    "react-native-grid-view": "^0.4.1",
+    "react-native-parallax-view": "^2.0.5",
+    "react-native-router-flux": "^3.35.0",
+    "react-native-segment-tab": "^0.1.1",
+    "react-native-star-rating": "^1.0.6",
+    "react-native-storage": "^0.1.4",
+    "react-native-tabs": "^1.0.9",
+    "react-native-textinput-effects": "^0.1.3",
+    "react-native-vector-icons": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.1.0"
+  }
+}
