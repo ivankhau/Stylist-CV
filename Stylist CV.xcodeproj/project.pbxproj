@@ -508,7 +508,7 @@
 				3F0B9A341CC76DF100F85A3A /* customLocationViewController.swift */,
 			);
 			name = "Hair Dew";
-			path = ParseStarterProject;
+			path = StylistCV;
 			sourceTree = "<group>";
 		};
 		81BA816A1A49DB5600E65899 /* Frameworks */ = {
@@ -535,12 +535,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Stylist CV.temp_caseinsensitive_rename" */;
 			buildPhases = (
-				38DFC25417F0E8856D7BBE01 /* 📦 Check Pods Manifest.lock */,
+				38DFC25417F0E8856D7BBE01 /* [CP] Check Pods Manifest.lock */,
 				81BA81411A49DA1800E65899 /* Sources */,
 				81BA81421A49DA1800E65899 /* Frameworks */,
 				81BA81431A49DA1800E65899 /* Resources */,
-				B4A17D4C252A9F64F3CAF9CD /* 📦 Embed Pods Frameworks */,
-				3C41AF2CFACD45EFA658542F /* 📦 Copy Pods Resources */,
+				B4A17D4C252A9F64F3CAF9CD /* [CP] Embed Pods Frameworks */,
+				3C41AF2CFACD45EFA658542F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -564,6 +564,7 @@
 					81BA81441A49DA1800E65899 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = FY524856QD;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -580,6 +581,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -610,29 +612,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38DFC25417F0E8856D7BBE01 /* 📦 Check Pods Manifest.lock */ = {
+		38DFC25417F0E8856D7BBE01 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3C41AF2CFACD45EFA658542F /* 📦 Copy Pods Resources */ = {
+		3C41AF2CFACD45EFA658542F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,14 +642,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stylist CV.temp_caseinsensitive_rename/Pods-Stylist CV.temp_caseinsensitive_rename-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B4A17D4C252A9F64F3CAF9CD /* 📦 Embed Pods Frameworks */ = {
+		B4A17D4C252A9F64F3CAF9CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,6 +797,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -831,6 +834,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -844,6 +848,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -853,8 +858,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Khau.BarberCV;
 				PRODUCT_NAME = "Stylist CV.temp_caseinsensitive_rename";
-				PROVISIONING_PROFILE = "1f531243-3efd-49c1-9473-155431ab0121";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/ivankhau/Desktop/haircvoriginalchangedtofirebase/ParseStarterProject/Header.h;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ivankhau/Desktop/untitled folder/My Apps/Stylist CV Cleanup/haircvoriginalchangedtofirebase/ParseStarterProject/Header.h";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -867,6 +874,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -876,8 +884,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Khau.BarberCV;
 				PRODUCT_NAME = "Stylist CV.temp_caseinsensitive_rename";
-				PROVISIONING_PROFILE = "1f531243-3efd-49c1-9473-155431ab0121";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/ivankhau/Desktop/haircvoriginalchangedtofirebase/ParseStarterProject/Header.h;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ivankhau/Desktop/untitled folder/My Apps/Stylist CV Cleanup/haircvoriginalchangedtofirebase/ParseStarterProject/Header.h";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

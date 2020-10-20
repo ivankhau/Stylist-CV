@@ -1,0 +1,6 @@
+framework module Pods_Stylist_CV_temp_caseinsensitive_rename {
+  umbrella header "Pods-Stylist CV.temp_caseinsensitive_rename-umbrella.h"
+
+  export *
+  module * { export * }
+}
