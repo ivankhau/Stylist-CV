@@ -2,7 +2,7 @@
 Stylist-CV is a Yelp/Instagram hybrid for hair stylist and tattoo artists. App was to be re-skinned with 2 versions, one for hair stylists, and another for tattoo artists.
 
 ## Functionality
-Find stylists (hair stylist/tattoo artists) in your area. See photos of work they've done, reviews, prices, and contact info. Uses your location to search for stylists and sorts them by how good their profile is and his/her reviews. Chat built in (includes push notifications using OneSignal). Firebase backend. Partial React Native port included.
+Find stylists (hair stylist/tattoo artists) in your area. See photos of work they've done, reviews, prices, and contact info. Uses your location to search for stylists and sorts them using a popularity algorithm. Chat is built in (includes push notifications using OneSignal). Firebase backend. Partial React Native port included.
 
 ### Search tab that shows the stylist in the area. You can change search settings using the button on the top right.
 
